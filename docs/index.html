@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard and Persona</title>
-<h1> Rural Communities Are Unhealthy </h1>
 
   <style>
     body {
@@ -38,12 +37,26 @@
       margin-top: 30px;
       border-radius: 6px;
     }
+    .citations {
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 6px;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+    .citations h2 {
+      margin-top: 0;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
 
+    <!-- HEADER MOVED HERE -->
+    <h1>Rural Communities Are Unhealthy</h1>
+
+    <!-- DASHBOARD -->
     <div class='tableauPlaceholder' id='viz1763351314014' style='position: relative; margin-bottom: 40px;'>
       <noscript>
         <a href='#'>
@@ -90,12 +103,11 @@
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
 
-  
     <h1>Persona</h1>
 
-  <h2>About This Persona</h2>
+    <h2>About This Persona</h2>
     <p>
-     Personas help bring data to life. These fictional profiles are grounded in real experiences 
+      Personas help bring data to life. These fictional profiles are grounded in real experiences 
       and represent a blend of many different stories. Personas are a way to help decision-makers 
       understand communities’ needs or how a real individual might interact with services based 
       on their life circumstances, and where additional resources may be needed.
@@ -107,15 +119,30 @@
       class="persona-image"
     />
 
-
     <div class="writeup">
       <h2>Project Write-Up</h2>
-        <p>
-        This project expands on the themes I introduced in my earlier myth-busting assignment, where I argued that rural health myths cannot be meaningfully understood without context. One of the most effective ways to bring that context into focus is through data. To explore the relationships between geography, access, and health outcomes in rural Iowa, I used RStudio to retrieve and prepare Census data, which informed the maps and indicators used in this dashboard. I also incorporated data from the SDOH and Place Project Database, including datasets from the CDC, to ground the analysis in well-established public health metrics.
+      <p>
+        This project expands on the themes I introduced in my earlier myth-busting assignment, where I argued that rural health myths cannot be meaningfully understood without context. One of the most effective ways to bring that context into focus is through data. I have found that most available data is not designed for the general public, and I looked to fill this gap with my project. To explore this myth in rural Iowa, I used RStudio to retrieve and prepare Census data, which informed the maps and indicators used in this dashboard. I also incorporated data from the SDOH and Place Project Database, including datasets from the CDC, to ground this project in well-established public health indicators.
         <br><br>
-        Recent political developments have prompted me to think more critically about the indirect externalities associated with the closure or consolidation of rural hospitals, an issue that is becoming increasingly pressing across the state. As someone who already drives a significant distance daily, I am wildly aware of how quickly fuel costs, time, and vehicle maintenance can add up to a significant burden. For residents who are financially strained or juggling multiple responsibilities, needing to travel further for medical care may push basic routine care even further out of reach. This may lead to delays in preventive screenings, follow-up care, and early intervention that can quickly escalate into more severe and costly health outcomes over time.
+        Recent political developments have prompted me to think more critically about the indirect externalities associated with the closure or consolidation of rural hospitals, an issue that is becoming increasingly pressing across the state. As someone who already drives a significant distance daily, I am wildly aware of how quickly fuel costs, time, and vehicle maintenance can add up to a significant burden. For residents who are financially strained or juggling multiple responsibilities, needing to travel further for medical care may push basic routine care even further out of reach. This may lead to delays in preventive screenings, follow-up care, and early intervention that can quickly escalate into more severe and costly health outcomes over time. I strongly believe that this can exacerbate and increase the inequalities experienced by rural residents. The primary focus of this map is access to hospitals, but to better understand the communities that experience the most strain, I have developed two additional maps to assist.
         <br><br>
         Iowa is currently experiencing rapidly rising cancer rates and facing numerous other environmental and health challenges, such as water pollution and binge drinking rates. Given these concerns, all Iowans, both rural and urban, should be concerned about the broader consequences of losing rural healthcare. To help articulate these concerns, I created a persona based on several real individuals from rural communities who have shared their experiences of aging, caregiving, and navigating the healthcare system. Personas can be a powerful tool because they translate complex statistics into relatable stories, helping communities better understand their own data and make informed, data-driven decisions to strengthen local well-being and vitality.
+      </p>
+    </div>
+
+
+    <div class="citations">
+      <h2>References</h2>
+      <p>
+• Chang, Y.-n., Lim, Y., & Stolterman, E. (2008). Personas: From theory to practices. In Proceedings of the 5th Nordic Conference on Human-Computer Interaction: Building Bridges (pp. 439–442). Association for Computing Machinery. https://doi.org/10.1145/1463160.1463214<br>
+• Dam, R. F., & Teo, Y. S. (2025, August 19). Personas – A simple introduction. Interaction Design Foundation – IxDF. Retrieved September 22, 2025, from https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them<br>
+• Eldeeb, G., & Mohamed, M. (2020). Understanding the transit market: A persona-based approach for preferences quantification. Sustainability, 12(9), 3863. https://doi.org/10.3390/su12093863<br>
+• Iowa State University Institute for Community & Regional Planning. (n.d.). Population: Rural and urban. Retrieved from https://www.icip.iastate.edu/tables/population/rural-urban<br>
+• Massey, P. M., Chiang, S. C., Rose, M., Murray, R. M., Rockett, M., Togo, E., Klassen, A. C., Manganello, J. A., & Leader, A. E. (2021). Development of personas to communicate narrative-based information about the HPV vaccine on Twitter. Frontiers in Digital Health, 3, 682639. https://doi.org/10.3389/fdgth.2021.682639<br>
+• SDOH Place. (n.d.). Social determinants of health place-based data. Retrieved from https://sdohplace.org<br>
+• Ten Klooster, I., Wentzel, J., Sieverink, F., Linssen, G., Wesselink, R., & van Gemert-Pijnen, L. (2022). Personas for better targeted eHealth technologies: User-centered design approach. JMIR Human Factors, 9(1), e24172. https://doi.org/10.2196/24172<br>
+• U.S. Centers for Disease Control and Prevention. (n.d.). Environmental Public Health Tracking – Data Explorer. Retrieved from https://ephtracking.cdc.gov/DataExplorer/<br>
+• U.S. Census Bureau. (2022). Age and Sex, American Community Survey 5-Year Estimates, Table S0101. Retrieved from https://data.census.gov<br>
       </p>
     </div>
 
