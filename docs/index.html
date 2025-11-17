@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Persona</title>
+  <title>Dashboard and Persona</title>
 
   <style>
     body {
@@ -14,7 +14,7 @@
       color: #333;
     }
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
       background: #fff;
       padding: 30px;
@@ -37,28 +37,62 @@
       margin-top: 30px;
       border-radius: 6px;
     }
-    .back-link {
-      display: inline-block;
-      margin-bottom: 20px;
-      font-size: 1.1em;
-      color: #007acc;
-      text-decoration: none;
-    }
-    .back-link:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 
 <body>
   <div class="container">
 
-    <a class="back-link" href="index.html">← Back to Home</a>
+    <div class='tableauPlaceholder' id='viz1763351314014' style='position: relative; margin-bottom: 40px;'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 1'
+            src='https://public.tableau.com/static/images/Ap/AppliedPRJ/Dashboard1/1_rss.png'
+            style='border: none' />
+        </a>
+      </noscript>
 
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='AppliedPRJ/Dashboard1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Ap/AppliedPRJ/Dashboard1/1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1763351314014');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+
+      if (divElement.offsetWidth > 800) { 
+        vizElement.style.width='1000px';
+        vizElement.style.height='827px';
+      } else if (divElement.offsetWidth > 500) { 
+        vizElement.style.width='1000px';
+        vizElement.style.height='827px';
+      } else { 
+        vizElement.style.width='100%';
+        vizElement.style.height='877px';
+      }
+
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+  
     <h1>Persona</h1>
 
-    <p>This persona illustrates the lived experience behind rural healthcare access 
-       challenges in rual Iowa.</p>
+    <p>This persona illustrates the lived experience behind rural healthcare access challenges in rural Iowa.</p>
 
     <img 
       src="https://raw.githubusercontent.com/EttenSyd/RuralVital2025/main/doc/PersonaFINAL.png" 
@@ -68,7 +102,7 @@
 
     <h2>About This Persona</h2>
     <p>
-      Personas help bring data to life. These fictional profiles are grounded in real experiences 
+     Personas help bring data to life. These fictional profiles are grounded in real experiences 
       and represent a blend of many different stories. Personas are a way to help decision-makers 
       understand communities’ needs or how a real individual might interact with services based 
       on their life circumstances, and where additional resources may be needed.
@@ -76,7 +110,7 @@
 
     <div class="writeup">
       <h2>Project Write-Up</h2>
-      <p>
+        <p>
         This project expands on the themes I introduced in my earlier myth-busting assignment, where I argued that rural health myths cannot be meaningfully understood without context. One of the most effective ways to bring that context into focus is through data. To explore the relationships between geography, access, and health outcomes in rural Iowa, I used RStudio to retrieve and prepare Census data, which informed the maps and indicators used in this dashboard. I also incorporated data from the SDOH and Place Project Database, including datasets from the CDC, to ground the analysis in well-established public health metrics.
         <br><br>
         Recent political developments have prompted me to think more critically about the indirect externalities associated with the closure or consolidation of rural hospitals, an issue that is becoming increasingly pressing across the state. As someone who already drives a significant distance daily, I am wildly aware of how quickly fuel costs, time, and vehicle maintenance can add up to a significant burden. For residents who are financially strained or juggling multiple responsibilities, needing to travel further for medical care may push basic routine care even further out of reach. This may lead to delays in preventive screenings, follow-up care, and early intervention that can quickly escalate into more severe and costly health outcomes over time.
@@ -88,4 +122,3 @@
   </div>
 </body>
 </html>
-
